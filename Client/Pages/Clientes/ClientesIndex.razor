@@ -5,7 +5,7 @@
 @inject NavigationManager navegar
 
 <h3>C L I E N T E S</h3>
-<button class="btn btn-primary" @onclick="Agregar"><span class="oi oi-plus"></span>Agregar libro</button>
+<button class="btn btn-primary" @onclick="Agregar"><span class="oi oi-plus"></span>Agregar cliente</button>
 
 @if (losClientes == null)
 {
@@ -13,7 +13,7 @@
 }
 else if (losClientes.Count == 0)
 {
-    <p>No existen personas registradas</p>
+    <p>No existen clientes registradas</p>
 }
 else
 {

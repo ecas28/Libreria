@@ -33,24 +33,26 @@
     </div>
 
     <div class="row mb-3">
-        <label for="txtInicio" class="col-2 col-form-label">FECHA DE INICIO DE PRESTAMO</label>
+        <label for="txtInicio" class="col-2 col-form-label">Fecha de inicio del prestamo</label>
         <InputDate class="form-control" id="txtInicio" @bind-Value="elPrestamo.Inicioprestamo" />
         <ValidationMessage For="(()=>elPrestamo.Inicioprestamo)" />
     </div>
 
     <div class="row mb-3">
-        <label for="txtVencimiento" class="col-2 col-form-label">FECHA DE VENCIMIENTO DE PRESTAMO</label>
+        <label for="txtVencimiento" class="col-2 col-form-label">Fecha de vencimiento del prestamo</label>
         <InputDate class="form-control" id="txtVencimiento" @bind-Value="elPrestamo.Vencimientoprestamo" />
         <ValidationMessage For="(()=>elPrestamo.Vencimientoprestamo)" />
     </div>
 
     <div class="row mb-3">
-        <label for="txtDevolucion" class="col-2 col-form-label">FECHA DE VENCIMIENTO DEL PRESTAMO</label>
+        <label for="txtDevolucion" class="col-2 col-form-label">Fecha de devolución del prestamo</label>
         <InputDate class="form-control" id="txtDevolucion" @bind-Value="elPrestamo.Fechadevolucion" />
         <ValidationMessage For="(()=>elPrestamo.Fechadevolucion)" />
     </div>
     <button type="submit" class="btn btn-primary">Guardar</button>
 </EditForm>
+
+
 
 @code {
     private Prestamos elPrestamo = new Prestamos();
@@ -70,3 +72,4 @@
         navegar.NavigateTo("/prestamos");
     }
 }
+

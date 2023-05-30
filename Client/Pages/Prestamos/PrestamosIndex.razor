@@ -4,16 +4,16 @@
 @inject HttpClient http
 @inject NavigationManager navegar
 
-<h3>Formulario</h3>
-<button class="btn btn-primary" @onclick="Agregar"><span class="oi oi-plus"></span>Agregar libro</button>
+<h3>P R E S T A M O S</h3>
+<button class="btn btn-primary" @onclick="Agregar"><span class="oi oi-plus"></span>Agregar prestamo</button>
 
 @if (losPrestamos == null)
 {
-    <p>Cragando datos...</p>
+    <p>Cargando datos...</p>
 }
 else if (losPrestamos.Count == 0)
 {
-    <p>No existen personas registradas</p>
+    <p>No existen prestamos registrados</p>
 }
 else
 
