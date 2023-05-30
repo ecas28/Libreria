@@ -4,12 +4,12 @@
 @inject HttpClient http
 @inject NavigationManager navegar
 
-<h3>Formulario</h3>
+<h3>C L I E N T E S</h3>
 <button class="btn btn-primary" @onclick="Agregar"><span class="oi oi-plus"></span>Agregar libro</button>
 
 @if (losClientes == null)
 {
-    <p>Cragando datos...</p>
+    <p>Cargando datos...</p>
 }
 else if (losClientes.Count == 0)
 {
