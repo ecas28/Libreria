@@ -19,10 +19,10 @@ namespace Libreria.Shared.Modelo
 
         public virtual Libro? Libro { get; set; }
 
-        [Required(ErrorMessage = "Favor de escribir la fecha de inicio del prestamo"), MaxLength(10)]
+        [Required(ErrorMessage = "Favor de escribir la fecha de inicio del prestamo")]
         public DateTime? Inicioprestamo { get; set; }
 
-        [Required(ErrorMessage = "Favor de escribir la fecha de vencimiento del prestamo"), MaxLength(10)]
+        [Required(ErrorMessage = "Favor de escribir la fecha de vencimiento del prestamo")]
         public DateTime? Vencimientoprestamo { get; set; }
 
         public DateTime? Fechadevolucion { get; set; }
