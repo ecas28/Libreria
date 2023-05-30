@@ -3,25 +3,25 @@
 @inject HttpClient http
 @inject NavigationManager navegar
 
-<h3>Libro nuevo</h3>
+<h3>Añade un libro nuevo</h3>
 
 <EditForm Model="elLibro" OnValidSubmit="Guardar">
     <DataAnnotationsValidator />
 
     <div class="row mb-3">
-        <label for="txtLibro" class="col-2 col-form-label">NOMBRE DEL LIBRO</label>
+        <label for="txtLibro" class="col-2 col-form-label">Nombre del libro</label>
         <InputText class="form-control" id="txtLibro" @bind-Value="elLibro.Nombrelibro" />
         <ValidationMessage For="(()=>elLibro.Nombrelibro)" />
     </div>
 
     <div class="row mb-3">
-        <label for="txtAutor" class="col-2 col-form-label">AUTOR DEL LIBRO</label>
+        <label for="txtAutor" class="col-2 col-form-label">Autor del libro</label>
         <InputText class="form-control" id="txtAutor" @bind-Value="elLibro.Autorlibro" />
         <ValidationMessage For="(()=>elLibro.Autorlibro)" />
     </div>
 
     <div class="row mb-3">
-        <label for="txtFecha" class="col-2 col-form-label">FECHA</label>
+        <label for="txtFecha" class="col-2 col-form-label">Fecha de publicación</label>
         <InputText class="form-control" id="txtFecha" @bind-Value="elLibro.Fechapublicacion" />
         <ValidationMessage For="(()=>elLibro.Fechapublicacion)" />
     </div>
